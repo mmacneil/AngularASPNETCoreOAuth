@@ -11,14 +11,9 @@ namespace AuthServer
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, ILoggerFactory loggerFactory)
+        public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-
-            loggerFactory.AddSerilog(new LoggerConfiguration()
-            .MinimumLevel.Verbose()
-            .Enrich.FromLogContext()
-            .WriteTo.File(@"authserver_log.txt").CreateLogger());
         }
 
         public IConfiguration Configuration { get; }
@@ -37,7 +32,7 @@ namespace AuthServer
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -47,6 +42,20 @@ namespace AuthServer
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            var serilog = new LoggerConfiguration()
+                .MinimumLevel.Verbose()
+                .Enrich.FromLogContext()
+                .WriteTo.File(@"authserver_log.txt");
+
+            loggerFactory
+                .WithFilter(new FilterLoggerSettings
+                {
+                    { "IdentityServer4", LogLevel.Debug },
+                    { "Microsoft", LogLevel.Warning },
+                    { "System", LogLevel.Warning },
+                })
+                .AddSerilog(serilog.CreateLogger());
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
