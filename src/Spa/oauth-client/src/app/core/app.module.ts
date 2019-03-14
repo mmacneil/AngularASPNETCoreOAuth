@@ -15,9 +15,9 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
+    BrowserModule,   
     HomeModule,
-    AccountModule,
-    BrowserModule,
+    AccountModule,   
     AppRoutingModule
   ],
   providers: [],

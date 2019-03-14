@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule }   from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+
 
 import { AccountRouting } from './account.routing';
 
@@ -8,6 +10,7 @@ import { AccountRouting } from './account.routing';
   declarations: [LoginComponent],
   imports: [
     CommonModule,
+    FormsModule,
     AccountRouting
   ]
 })
