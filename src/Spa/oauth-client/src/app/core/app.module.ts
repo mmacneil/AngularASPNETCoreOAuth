@@ -23,7 +23,7 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule, 
     HomeModule,
     AccountModule,   
-    AppRoutingModule
+    AppRoutingModule    
   ],
   providers: [
      // provider used to create fake backend

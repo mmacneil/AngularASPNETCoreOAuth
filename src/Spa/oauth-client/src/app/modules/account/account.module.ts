@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule }   from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { AccountRouting } from './account.routing';
 import { AuthService }  from '../../core/services/auth.service';
@@ -12,7 +13,8 @@ import { AuthService }  from '../../core/services/auth.service';
   imports: [
     CommonModule,
     FormsModule,
-    AccountRouting
+    AccountRouting,
+    NgxSpinnerModule
   ]
 })
 export class AccountModule { }

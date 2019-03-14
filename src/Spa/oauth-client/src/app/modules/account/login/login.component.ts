@@ -1,7 +1,9 @@
  
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from '../../../core/services/auth.service';
 import { Credentials }    from '../../../shared/models/credentials';
+import { finalize } from 'rxjs/operators'
 
 @Component({
   selector: 'app-login',
@@ -13,7 +15,7 @@ export class LoginComponent implements OnInit {
   error: string;
   credentials: Credentials = { email: '', password: '' };
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private spinner: NgxSpinnerService) { }
 
     // TODO: Remove this when we're done
     // diagnostic property to return a JSON representation of the model.
@@ -21,8 +23,12 @@ export class LoginComponent implements OnInit {
 
     onSubmit() {    
       
+      this.spinner.show();
+
       this.authService.login()
-     
+      .pipe(finalize(() => {
+        this.spinner.hide();
+      }))  
       .subscribe(
       result => {         
          if(result) {
