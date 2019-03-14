@@ -1,5 +1,6 @@
+ 
 import { Component, OnInit } from '@angular/core';
-
+import { AuthService } from '../../../core/services/auth.service';
 import { Credentials }    from '../../../shared/models/credentials';
 
 @Component({
@@ -9,20 +10,32 @@ import { Credentials }    from '../../../shared/models/credentials';
 })
 export class LoginComponent implements OnInit {
 
+  error: string;
   credentials: Credentials = { email: '', password: '' };
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
     // TODO: Remove this when we're done
     // diagnostic property to return a JSON representation of the model.
     get diagnostic() { return JSON.stringify(this.credentials); }
 
-    onSubmit() { 
-      alert("creds = " + this.credentials.email + " " + this.credentials.password); 
-    }
+    onSubmit() {    
+      
+      this.authService.login()
+     
+      .subscribe(
+      result => {         
+         if(result) {
+           // success
+         }
+      },
+      error => {
+        this.error = error.error.message;        
+      });
+    }   
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 }
 
 

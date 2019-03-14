@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'; 
+
+// used to create fake backend
+import { FakeBackendProvider } from './mocks/fake-backend-interceptor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,12 +19,16 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent
   ],
   imports: [
-    BrowserModule,   
+    BrowserModule,  
+    HttpClientModule, 
     HomeModule,
     AccountModule,   
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+     // provider used to create fake backend
+     FakeBackendProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
