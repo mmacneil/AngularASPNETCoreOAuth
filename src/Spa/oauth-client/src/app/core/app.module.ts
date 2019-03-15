@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { SharedModule }   from '../shared/modules/shared.module';
 
 // used to create fake backend
 import { FakeBackendProvider } from './mocks/fake-backend-interceptor';
@@ -23,7 +24,8 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule, 
     HomeModule,
     AccountModule,   
-    AppRoutingModule    
+    AppRoutingModule,
+    SharedModule  
   ],
   providers: [
      // provider used to create fake backend
