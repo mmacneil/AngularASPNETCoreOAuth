@@ -1,8 +1,8 @@
  
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { AuthService } from '../../../core/services/auth.service';
-import { Credentials }    from '../../../shared/models/credentials';
+import { AuthService } from '../../core/services/auth.service';
+import { Credentials }    from '../../shared/models/credentials';
 import { finalize } from 'rxjs/operators'
 
 @Component({

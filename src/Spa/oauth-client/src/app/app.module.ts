@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { SharedModule }   from '../shared/modules/shared.module';
+import { SharedModule }   from './shared/shared.module';
 
 // used to create fake backend
-import { FakeBackendProvider } from './mocks/fake-backend-interceptor';
+import { FakeBackendProvider } from './core/mocks/fake-backend-interceptor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 /* Module Imports */
-import { HomeModule }  from '../modules/home/home.module';
-import { AccountModule }  from '../modules/account/account.module';
-import { HeaderComponent } from './header/header.component';
+import { HomeModule }  from './home/home.module';
+import { AccountModule }  from './account/account.module';
+import { HeaderComponent } from './core/header/header.component';
 
 @NgModule({
   declarations: [
