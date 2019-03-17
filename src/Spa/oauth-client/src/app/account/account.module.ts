@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { SharedModule }   from '../shared/shared.module';
 
 import { AccountRoutingModule } from './account.routing-module';
-import { AuthService }  from '../core/services/auth.service';
+import { AuthService }  from '../core/authentication/auth.service';
 
 @NgModule({
   declarations: [LoginComponent],
