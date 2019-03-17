@@ -1,0 +1,196 @@
+2019-03-17 15:54:25.524 -03:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-17 15:54:26.113 -03:00 [INF] Using the default authentication scheme Bearer for IdentityServer
+2019-03-17 15:54:26.116 -03:00 [ERR] Authentication scheme Bearer is configured for IdentityServer, but it is not a scheme that supports signin (like cookies). Either configure the default authentication scheme with cookies or set the CookieAuthenticationScheme on the IdentityServerOptions.
+2019-03-17 15:54:26.118 -03:00 [DBG] Using Bearer as default ASP.NET Core scheme for authentication
+2019-03-17 15:54:26.120 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-17 15:54:26.122 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-17 15:54:26.124 -03:00 [DBG] Using Bearer as default ASP.NET Core scheme for challenge
+2019-03-17 15:54:26.127 -03:00 [DBG] Using Bearer as default ASP.NET Core scheme for forbid
+2019-03-17 15:54:26.512 -03:00 [DBG] Starting grant removal
+2019-03-17 15:54:27.404 -03:00 [WRN] Failed to determine the https port for redirect.
+2019-03-17 15:54:57.776 -03:00 [INF] Removing 0 grants
+2019-03-17 15:55:27.817 -03:00 [INF] Removing 0 grants
+2019-03-17 15:55:57.833 -03:00 [INF] Removing 0 grants
+2019-03-17 15:56:27.845 -03:00 [INF] Removing 0 grants
+2019-03-17 15:56:57.857 -03:00 [INF] Removing 0 grants
+2019-03-17 15:57:27.878 -03:00 [INF] Removing 0 grants
+2019-03-17 15:57:57.897 -03:00 [INF] Removing 0 grants
+2019-03-17 15:58:27.918 -03:00 [INF] Removing 0 grants
+2019-03-17 15:58:57.941 -03:00 [INF] Removing 0 grants
+2019-03-17 15:59:27.949 -03:00 [INF] Removing 0 grants
+2019-03-17 15:59:57.970 -03:00 [INF] Removing 0 grants
+2019-03-17 16:00:27.993 -03:00 [INF] Removing 0 grants
+2019-03-17 16:00:58.014 -03:00 [INF] Removing 0 grants
+2019-03-17 16:01:28.030 -03:00 [INF] Removing 0 grants
+2019-03-17 16:01:58.049 -03:00 [INF] Removing 0 grants
+2019-03-17 16:02:28.082 -03:00 [INF] Removing 0 grants
+2019-03-17 16:02:58.099 -03:00 [INF] Removing 0 grants
+2019-03-17 16:03:28.108 -03:00 [INF] Removing 0 grants
+2019-03-17 16:03:58.130 -03:00 [INF] Removing 0 grants
+2019-03-17 16:04:28.140 -03:00 [INF] Removing 0 grants
+2019-03-17 16:04:58.167 -03:00 [INF] Removing 0 grants
+2019-03-17 16:05:28.197 -03:00 [INF] Removing 0 grants
+2019-03-17 16:05:58.213 -03:00 [INF] Removing 0 grants
+2019-03-17 16:06:28.233 -03:00 [INF] Removing 0 grants
+2019-03-17 16:06:58.253 -03:00 [INF] Removing 0 grants
+2019-03-17 16:07:28.266 -03:00 [INF] Removing 0 grants
+2019-03-17 16:07:58.284 -03:00 [INF] Removing 0 grants
+2019-03-17 16:08:28.303 -03:00 [INF] Removing 0 grants
+2019-03-17 16:08:58.331 -03:00 [INF] Removing 0 grants
+2019-03-17 16:09:28.349 -03:00 [INF] Removing 0 grants
+2019-03-17 16:09:58.366 -03:00 [INF] Removing 0 grants
+2019-03-17 16:10:28.387 -03:00 [INF] Removing 0 grants
+2019-03-17 16:10:58.406 -03:00 [INF] Removing 0 grants
+2019-03-17 16:11:28.426 -03:00 [INF] Removing 0 grants
+2019-03-17 16:11:58.445 -03:00 [INF] Removing 0 grants
+2019-03-17 16:12:28.477 -03:00 [INF] Removing 0 grants
+2019-03-17 16:12:58.491 -03:00 [INF] Removing 0 grants
+2019-03-17 16:13:28.507 -03:00 [INF] Removing 0 grants
+2019-03-17 16:13:58.523 -03:00 [INF] Removing 0 grants
+2019-03-17 16:14:28.539 -03:00 [INF] Removing 0 grants
+2019-03-17 16:14:58.567 -03:00 [INF] Removing 0 grants
+2019-03-17 16:15:28.582 -03:00 [INF] Removing 0 grants
+2019-03-17 16:15:58.598 -03:00 [INF] Removing 0 grants
+2019-03-17 16:16:28.606 -03:00 [INF] Removing 0 grants
+2019-03-17 16:16:58.622 -03:00 [INF] Removing 0 grants
+2019-03-17 16:17:28.636 -03:00 [INF] Removing 0 grants
+2019-03-17 16:17:58.652 -03:00 [INF] Removing 0 grants
+2019-03-17 16:18:28.660 -03:00 [INF] Removing 0 grants
+2019-03-17 16:18:58.676 -03:00 [INF] Removing 0 grants
+2019-03-17 16:19:28.689 -03:00 [INF] Removing 0 grants
+2019-03-17 16:19:58.700 -03:00 [INF] Removing 0 grants
+2019-03-17 16:20:28.711 -03:00 [INF] Removing 0 grants
+2019-03-17 16:20:58.718 -03:00 [INF] Removing 0 grants
+2019-03-17 16:21:28.749 -03:00 [INF] Removing 0 grants
+2019-03-17 16:21:58.773 -03:00 [INF] Removing 0 grants
+2019-03-17 16:22:28.788 -03:00 [INF] Removing 0 grants
+2019-03-17 16:22:58.798 -03:00 [INF] Removing 0 grants
+2019-03-17 16:23:28.816 -03:00 [INF] Removing 0 grants
+2019-03-17 16:23:58.830 -03:00 [INF] Removing 0 grants
+2019-03-17 16:24:28.840 -03:00 [INF] Removing 0 grants
+2019-03-17 16:24:58.850 -03:00 [INF] Removing 0 grants
+2019-03-17 16:25:28.858 -03:00 [INF] Removing 0 grants
+2019-03-17 16:25:58.872 -03:00 [INF] Removing 0 grants
+2019-03-17 16:26:28.893 -03:00 [INF] Removing 0 grants
+2019-03-17 16:26:58.915 -03:00 [INF] Removing 0 grants
+2019-03-17 16:27:28.946 -03:00 [INF] Removing 0 grants
+2019-03-17 17:46:09.030 -03:00 [INF] Removing 0 grants
+2019-03-17 17:46:39.046 -03:00 [INF] Removing 0 grants
+2019-03-17 17:47:09.068 -03:00 [INF] Removing 0 grants
+2019-03-17 17:47:39.081 -03:00 [INF] Removing 0 grants
+2019-03-17 17:48:09.090 -03:00 [INF] Removing 0 grants
+2019-03-17 17:48:39.115 -03:00 [INF] Removing 0 grants
+2019-03-17 17:49:09.141 -03:00 [INF] Removing 0 grants
+2019-03-17 17:49:39.157 -03:00 [INF] Removing 0 grants
+2019-03-17 17:50:09.176 -03:00 [INF] Removing 0 grants
+2019-03-17 17:50:39.188 -03:00 [INF] Removing 0 grants
+2019-03-17 17:51:09.206 -03:00 [INF] Removing 0 grants
+2019-03-17 17:51:39.219 -03:00 [INF] Removing 0 grants
+2019-03-17 17:52:09.233 -03:00 [INF] Removing 0 grants
+2019-03-17 17:52:39.252 -03:00 [INF] Removing 0 grants
+2019-03-17 17:53:09.261 -03:00 [INF] Removing 0 grants
+2019-03-17 17:53:39.279 -03:00 [INF] Removing 0 grants
+2019-03-17 17:54:09.296 -03:00 [INF] Removing 0 grants
+2019-03-17 17:54:39.318 -03:00 [INF] Removing 0 grants
+2019-03-17 17:55:09.327 -03:00 [INF] Removing 0 grants
+2019-03-17 17:55:39.341 -03:00 [INF] Removing 0 grants
+2019-03-17 17:56:09.355 -03:00 [INF] Removing 0 grants
+2019-03-17 17:56:39.377 -03:00 [INF] Removing 0 grants
+2019-03-17 17:57:09.397 -03:00 [INF] Removing 0 grants
+2019-03-17 17:57:39.416 -03:00 [INF] Removing 0 grants
+2019-03-17 17:58:09.443 -03:00 [INF] Removing 0 grants
+2019-03-17 17:58:39.452 -03:00 [INF] Removing 0 grants
+2019-03-17 17:59:09.481 -03:00 [INF] Removing 0 grants
+2019-03-17 17:59:39.497 -03:00 [INF] Removing 0 grants
+2019-03-17 18:00:09.514 -03:00 [INF] Removing 0 grants
+2019-03-17 18:00:39.529 -03:00 [INF] Removing 0 grants
+2019-03-17 18:01:09.539 -03:00 [INF] Removing 0 grants
+2019-03-17 18:01:39.549 -03:00 [INF] Removing 0 grants
+2019-03-17 18:02:09.556 -03:00 [INF] Removing 0 grants
+2019-03-17 18:02:39.573 -03:00 [INF] Removing 0 grants
+2019-03-17 18:03:09.588 -03:00 [INF] Removing 0 grants
+2019-03-17 18:03:39.597 -03:00 [INF] Removing 0 grants
+2019-03-17 18:04:09.610 -03:00 [INF] Removing 0 grants
+2019-03-17 18:04:39.633 -03:00 [INF] Removing 0 grants
+2019-03-17 18:05:09.644 -03:00 [INF] Removing 0 grants
+2019-03-17 18:05:39.672 -03:00 [INF] Removing 0 grants
+2019-03-17 18:06:09.685 -03:00 [INF] Removing 0 grants
+2019-03-17 18:06:39.709 -03:00 [INF] Removing 0 grants
+2019-03-17 18:07:09.722 -03:00 [INF] Removing 0 grants
+2019-03-17 18:07:39.751 -03:00 [INF] Removing 0 grants
+2019-03-17 18:08:09.764 -03:00 [INF] Removing 0 grants
+2019-03-17 18:08:39.786 -03:00 [INF] Removing 0 grants
+2019-03-17 18:09:09.801 -03:00 [INF] Removing 0 grants
+2019-03-17 18:09:39.816 -03:00 [INF] Removing 0 grants
+2019-03-17 18:10:09.845 -03:00 [INF] Removing 0 grants
+2019-03-17 18:10:39.865 -03:00 [INF] Removing 0 grants
+2019-03-17 18:11:09.882 -03:00 [INF] Removing 0 grants
+2019-03-17 18:11:39.901 -03:00 [INF] Removing 0 grants
+2019-03-17 18:12:09.920 -03:00 [INF] Removing 0 grants
+2019-03-17 18:12:39.933 -03:00 [INF] Removing 0 grants
+2019-03-17 18:13:09.942 -03:00 [INF] Removing 0 grants
+2019-03-17 18:13:39.963 -03:00 [INF] Removing 0 grants
+2019-03-17 18:14:09.983 -03:00 [INF] Removing 0 grants
+2019-03-17 18:14:40.001 -03:00 [INF] Removing 0 grants
+2019-03-17 18:15:10.013 -03:00 [INF] Removing 0 grants
+2019-03-17 18:15:40.031 -03:00 [INF] Removing 0 grants
+2019-03-17 18:16:10.044 -03:00 [INF] Removing 0 grants
+2019-03-17 18:16:40.065 -03:00 [INF] Removing 0 grants
+2019-03-17 18:17:10.076 -03:00 [INF] Removing 0 grants
+2019-03-17 18:17:40.096 -03:00 [INF] Removing 0 grants
+2019-03-17 18:18:10.105 -03:00 [INF] Removing 0 grants
+2019-03-17 18:18:40.120 -03:00 [INF] Removing 0 grants
+2019-03-17 18:19:10.136 -03:00 [INF] Removing 0 grants
+2019-03-17 18:19:40.145 -03:00 [INF] Removing 0 grants
+2019-03-17 18:20:10.159 -03:00 [INF] Removing 0 grants
+2019-03-17 18:20:40.173 -03:00 [INF] Removing 0 grants
+2019-03-17 18:21:10.187 -03:00 [INF] Removing 0 grants
+2019-03-17 18:21:40.209 -03:00 [INF] Removing 0 grants
+2019-03-17 18:22:10.222 -03:00 [INF] Removing 0 grants
+2019-03-17 18:22:40.235 -03:00 [INF] Removing 0 grants
+2019-03-17 18:23:10.255 -03:00 [INF] Removing 0 grants
+2019-03-17 18:23:40.264 -03:00 [INF] Removing 0 grants
+2019-03-17 18:24:10.289 -03:00 [INF] Removing 0 grants
+2019-03-17 18:24:40.314 -03:00 [INF] Removing 0 grants
+2019-03-17 18:25:10.331 -03:00 [INF] Removing 0 grants
+2019-03-17 19:27:20.000 -03:00 [INF] Removing 0 grants
+2019-03-17 19:29:43.947 -03:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-17 19:29:44.255 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-17 19:29:44.257 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-17 19:29:44.259 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-17 19:29:44.261 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-17 19:29:44.263 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-17 19:29:44.264 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-17 19:29:44.519 -03:00 [DBG] Starting grant removal
+2019-03-17 19:29:45.250 -03:00 [WRN] Failed to determine the https port for redirect.
+2019-03-17 19:29:45.278 -03:00 [DBG] Login Url: /Account/Login
+2019-03-17 19:29:45.281 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-17 19:29:45.283 -03:00 [DBG] Logout Url: /Account/Logout
+2019-03-17 19:29:45.285 -03:00 [DBG] ConsentUrl Url: /consent
+2019-03-17 19:29:45.287 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-17 19:29:45.289 -03:00 [DBG] Error Url: /home/error
+2019-03-17 19:29:45.290 -03:00 [DBG] Error Id Parameter: errorId
+2019-03-17 19:30:15.534 -03:00 [INF] Removing 0 grants
+2019-03-17 19:30:45.567 -03:00 [INF] Removing 0 grants
+2019-03-17 19:31:15.578 -03:00 [INF] Removing 0 grants
+2019-03-17 19:31:46.045 -03:00 [INF] Removing 0 grants
+2019-03-17 19:32:16.065 -03:00 [INF] Removing 0 grants
+2019-03-17 19:34:17.877 -03:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-17 19:34:18.160 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-17 19:34:18.162 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-17 19:34:18.163 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-17 19:34:18.165 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-17 19:34:18.167 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-17 19:34:18.169 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-17 19:34:18.439 -03:00 [DBG] Starting grant removal
+2019-03-17 19:34:19.279 -03:00 [WRN] Failed to determine the https port for redirect.
+2019-03-17 19:34:19.312 -03:00 [DBG] Login Url: /Account/Login
+2019-03-17 19:34:19.314 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-17 19:34:19.316 -03:00 [DBG] Logout Url: /Account/Logout
+2019-03-17 19:34:19.319 -03:00 [DBG] ConsentUrl Url: /consent
+2019-03-17 19:34:19.323 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-17 19:34:19.325 -03:00 [DBG] Error Url: /home/error
+2019-03-17 19:34:19.327 -03:00 [DBG] Error Id Parameter: errorId
+2019-03-17 19:34:25.082 -03:00 [WRN] User 6087c27d-0dc7-4671-8183-03de2320313d validation failed: DuplicateUserName.
+2019-03-17 19:34:37.504 -03:00 [WRN] User 7054d85d-8e66-4cc9-b3a5-6b9b75de5a58 validation failed: DuplicateUserName.
+2019-03-17 19:34:48.529 -03:00 [INF] Removing 0 grants
