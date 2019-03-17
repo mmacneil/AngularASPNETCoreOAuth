@@ -4,7 +4,7 @@ import { FormsModule }   from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { SharedModule }   from '../shared/shared.module';
 
-import { AccountRouting } from './account.routing';
+import { AccountRoutingModule } from './account.routing-module';
 import { AuthService }  from '../core/services/auth.service';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { AuthService }  from '../core/services/auth.service';
   imports: [
     CommonModule,
     FormsModule,
-    AccountRouting,
+    AccountRoutingModule,
     SharedModule  
   ]
 })

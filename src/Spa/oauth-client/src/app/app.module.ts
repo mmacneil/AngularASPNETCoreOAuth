@@ -12,12 +12,11 @@ import { AppComponent } from './app.component';
 /* Module Imports */
 import { HomeModule }  from './home/home.module';
 import { AccountModule }  from './account/account.module';
-import { HeaderComponent } from './core/header/header.component';
+import { ShellModule } from './shell/shell.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent
+    AppComponent    
   ],
   imports: [
     BrowserModule,  
@@ -25,7 +24,8 @@ import { HeaderComponent } from './core/header/header.component';
     HomeModule,
     AccountModule,   
     AppRoutingModule,
-    SharedModule  
+    SharedModule,
+    ShellModule  
   ],
   providers: [
      // provider used to create fake backend
