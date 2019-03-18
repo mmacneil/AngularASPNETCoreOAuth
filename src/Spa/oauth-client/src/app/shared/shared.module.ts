@@ -7,14 +7,13 @@ import { NgModule }           from '@angular/core';
 import { CommonModule }       from '@angular/common';
  
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { EmailValidatorDirective } from './directives/email-validator.directive';
 
 //https://stackoverflow.com/questions/41433766/directive-doesnt-work-in-a-sub-module
 //https://stackoverflow.com/questions/45032043/uncaught-error-unexpected-module-formsmodule-declared-by-the-module-appmodul/45032201
 
 @NgModule({
   imports:      [CommonModule, NgxSpinnerModule],
-  declarations: [EmailValidatorDirective],
+  declarations: [],
   exports:      [NgxSpinnerModule],
   providers:    []
 })

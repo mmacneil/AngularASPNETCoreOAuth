@@ -8,6 +8,9 @@ import { FakeBackendProvider } from './core/authentication/fake-backend-intercep
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { ConfigService } from './shared/config.service';
+
+
 /* Module Imports */
 import { CoreModule } from './core/core.module';
 import { HomeModule }  from './home/home.module';
@@ -30,8 +33,9 @@ import { SharedModule }   from './shared/shared.module';
     SharedModule   
   ],
   providers: [
-     // provider used to create fake backend
-     FakeBackendProvider
+    ConfigService,
+    // provider used to create fake backend
+    FakeBackendProvider
   ],
   bootstrap: [AppComponent]
 })

@@ -8,12 +8,9 @@ import { SharedModule }   from '../shared/shared.module';
 import { AccountRoutingModule } from './account.routing-module';
 import { AuthService }  from '../core/authentication/auth.service';
 
-import { EmailValidator } from '../shared/directives/email-validator.directive';
-
-
 @NgModule({
-  declarations: [EmailValidator, LoginComponent, RegisterComponent],
-  providers: [ AuthService],
+  declarations: [LoginComponent, RegisterComponent],
+  providers: [AuthService],
   imports: [
     CommonModule,
     FormsModule,
