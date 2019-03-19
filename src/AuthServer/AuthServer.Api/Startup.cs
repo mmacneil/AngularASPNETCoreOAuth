@@ -1,9 +1,11 @@
 ﻿using AuthServer.Api;
+using AuthServer.Api.Extensions;
 using AuthServer.Infrastructure.Data.Identity;
 using AuthServer.Infrastructure.Services;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -13,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
+using System.Net;
 using System.Net.Http;
 
 namespace AuthServer
@@ -69,24 +72,34 @@ namespace AuthServer
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
+
+            app.UseExceptionHandler(builder =>
             {
-                app.UseExceptionHandler("/Home/Error");
-            }
+                builder.Run(async context =>
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+
+                    var error = context.Features.Get<IExceptionHandlerFeature>();
+                    if (error != null)
+                    {
+                        context.Response.AddApplicationError(error.Error.Message);
+                        await context.Response.WriteAsync(error.Error.Message).ConfigureAwait(false);
+                    }
+                });
+             });      
 
             var serilog = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
                 .Enrich.FromLogContext()
                 .WriteTo.File(@"authserver_log.txt");
 
-            loggerFactory
-                .WithFilter(new FilterLoggerSettings
+            loggerFactory.WithFilter(new FilterLoggerSettings
                 {
                     { "IdentityServer4", LogLevel.Debug },
                     { "Microsoft", LogLevel.Warning },
                     { "System", LogLevel.Warning },
-                })
-                .AddSerilog(serilog.CreateLogger());
+                }).AddSerilog(serilog.CreateLogger());
 
             app.UseStaticFiles();
             app.UseCors("AllowAll");

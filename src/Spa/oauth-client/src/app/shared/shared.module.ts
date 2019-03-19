@@ -7,14 +7,15 @@ import { NgModule }           from '@angular/core';
 import { CommonModule }       from '@angular/common';
  
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { AutofocusDirective } from './directives/auto-focus.directive';
 
 //https://stackoverflow.com/questions/41433766/directive-doesnt-work-in-a-sub-module
 //https://stackoverflow.com/questions/45032043/uncaught-error-unexpected-module-formsmodule-declared-by-the-module-appmodul/45032201
 
 @NgModule({
   imports:      [CommonModule, NgxSpinnerModule],
-  declarations: [],
-  exports:      [NgxSpinnerModule],
+  declarations: [AutofocusDirective],
+  exports:      [NgxSpinnerModule, AutofocusDirective],
   providers:    []
 })
 export class SharedModule { }

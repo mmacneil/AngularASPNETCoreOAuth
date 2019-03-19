@@ -576,3 +576,213 @@
 2019-03-18 21:15:24.673 -03:00 [WRN] User 4c677122-bd5c-4489-964c-6d737901549b validation failed: DuplicateUserName.
 2019-03-18 21:15:32.476 -03:00 [DBG] CORS request made for path: /api/accounts from origin: http://localhost:4200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
 2019-03-18 21:15:48.112 -03:00 [INF] Removing 0 grants
+2019-03-18 21:16:18.128 -03:00 [INF] Removing 0 grants
+2019-03-18 21:16:48.147 -03:00 [INF] Removing 0 grants
+2019-03-18 21:17:18.168 -03:00 [INF] Removing 0 grants
+2019-03-18 21:26:37.277 -03:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-18 21:26:37.585 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-18 21:26:37.588 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-18 21:26:37.590 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-18 21:26:37.592 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-18 21:26:37.613 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-18 21:26:37.615 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-18 21:26:37.904 -03:00 [DBG] Starting grant removal
+2019-03-18 21:26:38.615 -03:00 [WRN] Failed to determine the https port for redirect.
+2019-03-18 21:26:38.669 -03:00 [DBG] Login Url: /Account/Login
+2019-03-18 21:26:38.672 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-18 21:26:38.674 -03:00 [DBG] Logout Url: /Account/Logout
+2019-03-18 21:26:38.676 -03:00 [DBG] ConsentUrl Url: /consent
+2019-03-18 21:26:38.678 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-18 21:26:38.680 -03:00 [DBG] Error Url: /home/error
+2019-03-18 21:26:38.683 -03:00 [DBG] Error Id Parameter: errorId
+2019-03-18 21:27:09.062 -03:00 [INF] Removing 0 grants
+2019-03-18 21:27:27.788 -03:00 [DBG] CORS request made for path: /api/accounts from origin: http://localhost:4200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-18 21:27:28.501 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.Api.Controllers.AccountsController.Register(RegisterRequestViewModel model) in C:\Code\AngularASPNETCoreOAuth\src\AuthServer\AuthServer.Api\Controllers\AccountsController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-03-18 21:27:39.092 -03:00 [INF] Removing 0 grants
+2019-03-18 21:28:14.180 -03:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-18 21:28:14.525 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-18 21:28:14.528 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-18 21:28:14.530 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-18 21:28:14.531 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-18 21:28:14.533 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-18 21:28:14.534 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-18 21:28:14.806 -03:00 [DBG] Starting grant removal
+2019-03-18 21:28:15.840 -03:00 [WRN] Failed to determine the https port for redirect.
+2019-03-18 21:28:15.879 -03:00 [DBG] Login Url: /Account/Login
+2019-03-18 21:28:15.881 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-18 21:28:15.884 -03:00 [DBG] Logout Url: /Account/Logout
+2019-03-18 21:28:15.890 -03:00 [DBG] ConsentUrl Url: /consent
+2019-03-18 21:28:15.893 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-18 21:28:15.895 -03:00 [DBG] Error Url: /home/error
+2019-03-18 21:28:15.898 -03:00 [DBG] Error Id Parameter: errorId
+2019-03-18 21:28:45.892 -03:00 [INF] Removing 0 grants
+2019-03-18 21:29:15.939 -03:00 [INF] Removing 0 grants
+2019-03-18 21:29:45.958 -03:00 [INF] Removing 0 grants
+2019-03-18 21:30:09.301 -03:00 [DBG] CORS request made for path: /api/accounts from origin: http://localhost:4200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-18 21:30:10.020 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.Api.Controllers.AccountsController.Register(RegisterRequestViewModel model) in C:\Code\AngularASPNETCoreOAuth\src\AuthServer\AuthServer.Api\Controllers\AccountsController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-03-18 21:30:15.974 -03:00 [INF] Removing 0 grants
+2019-03-18 21:30:45.995 -03:00 [INF] Removing 0 grants
+2019-03-18 21:31:16.008 -03:00 [INF] Removing 0 grants
+2019-03-18 21:31:46.033 -03:00 [INF] Removing 0 grants
+2019-03-18 21:32:16.055 -03:00 [INF] Removing 0 grants
+2019-03-18 21:32:46.071 -03:00 [INF] Removing 0 grants
+2019-03-18 21:33:16.082 -03:00 [INF] Removing 0 grants
+2019-03-18 21:33:46.143 -03:00 [INF] Removing 0 grants
+2019-03-18 21:34:16.167 -03:00 [INF] Removing 0 grants
+2019-03-18 21:34:46.182 -03:00 [INF] Removing 0 grants
+2019-03-18 21:35:16.197 -03:00 [INF] Removing 0 grants
+2019-03-18 21:35:46.220 -03:00 [INF] Removing 0 grants
+2019-03-18 21:36:16.242 -03:00 [INF] Removing 0 grants
+2019-03-18 21:36:46.263 -03:00 [INF] Removing 0 grants
+2019-03-18 21:37:16.274 -03:00 [INF] Removing 0 grants
+2019-03-18 21:37:46.292 -03:00 [INF] Removing 0 grants
+2019-03-18 21:38:16.311 -03:00 [INF] Removing 0 grants
+2019-03-18 21:38:46.321 -03:00 [INF] Removing 0 grants
+2019-03-18 21:39:16.344 -03:00 [INF] Removing 0 grants
+2019-03-18 21:39:46.365 -03:00 [INF] Removing 0 grants
+2019-03-18 21:40:16.385 -03:00 [INF] Removing 0 grants
+2019-03-18 21:40:46.404 -03:00 [INF] Removing 0 grants
+2019-03-18 21:41:16.425 -03:00 [INF] Removing 0 grants
+2019-03-18 21:41:46.441 -03:00 [INF] Removing 0 grants
+2019-03-18 21:42:16.458 -03:00 [INF] Removing 0 grants
+2019-03-18 21:42:46.471 -03:00 [INF] Removing 0 grants
+2019-03-18 21:43:16.491 -03:00 [INF] Removing 0 grants
+2019-03-18 21:43:24.311 -03:00 [DBG] CORS request made for path: /api/accounts from origin: http://localhost:4200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-18 21:43:24.815 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at AuthServer.Api.Controllers.AccountsController.Register(RegisterRequestViewModel model) in C:\Code\AngularASPNETCoreOAuth\src\AuthServer\AuthServer.Api\Controllers\AccountsController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.Invoke(HttpContext context)
+2019-03-18 21:43:54.990 -03:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-03-18 21:43:55.303 -03:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-03-18 21:43:55.305 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-03-18 21:43:55.307 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-03-18 21:43:55.308 -03:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-03-18 21:43:55.310 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-03-18 21:43:55.312 -03:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-03-18 21:43:55.578 -03:00 [DBG] Starting grant removal
+2019-03-18 21:43:56.720 -03:00 [WRN] Failed to determine the https port for redirect.
+2019-03-18 21:43:56.764 -03:00 [DBG] Login Url: /Account/Login
+2019-03-18 21:43:56.769 -03:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-03-18 21:43:56.772 -03:00 [DBG] Logout Url: /Account/Logout
+2019-03-18 21:43:56.774 -03:00 [DBG] ConsentUrl Url: /consent
+2019-03-18 21:43:56.777 -03:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-03-18 21:43:56.785 -03:00 [DBG] Error Url: /home/error
+2019-03-18 21:43:56.788 -03:00 [DBG] Error Id Parameter: errorId
+2019-03-18 21:44:26.522 -03:00 [INF] Removing 0 grants
+2019-03-18 21:44:56.571 -03:00 [INF] Removing 0 grants
+2019-03-18 21:45:16.095 -03:00 [DBG] CORS request made for path: /api/accounts from origin: http://localhost:4200 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-03-18 21:45:26.596 -03:00 [INF] Removing 0 grants
+2019-03-18 21:45:56.615 -03:00 [INF] Removing 0 grants
+2019-03-18 21:46:26.633 -03:00 [INF] Removing 0 grants
+2019-03-18 21:46:56.676 -03:00 [INF] Removing 0 grants
+2019-03-18 21:47:26.690 -03:00 [INF] Removing 0 grants
+2019-03-18 21:47:56.724 -03:00 [INF] Removing 0 grants
+2019-03-18 21:48:26.743 -03:00 [INF] Removing 0 grants
+2019-03-18 21:48:56.772 -03:00 [INF] Removing 0 grants
+2019-03-18 21:49:26.789 -03:00 [INF] Removing 0 grants
+2019-03-18 21:49:56.808 -03:00 [INF] Removing 0 grants
+2019-03-18 21:50:26.819 -03:00 [INF] Removing 0 grants
+2019-03-18 21:50:56.840 -03:00 [INF] Removing 0 grants
+2019-03-18 21:51:26.864 -03:00 [INF] Removing 0 grants
+2019-03-18 21:51:56.882 -03:00 [INF] Removing 0 grants
+2019-03-18 21:52:26.903 -03:00 [INF] Removing 0 grants
+2019-03-18 21:52:56.925 -03:00 [INF] Removing 0 grants
+2019-03-18 21:53:26.954 -03:00 [INF] Removing 0 grants
+2019-03-18 21:53:56.974 -03:00 [INF] Removing 0 grants
+2019-03-18 21:54:27.000 -03:00 [INF] Removing 0 grants
+2019-03-18 21:54:57.017 -03:00 [INF] Removing 0 grants
+2019-03-18 21:55:27.034 -03:00 [INF] Removing 0 grants
+2019-03-18 21:55:57.051 -03:00 [INF] Removing 0 grants
+2019-03-18 21:56:27.069 -03:00 [INF] Removing 0 grants
+2019-03-18 21:56:57.081 -03:00 [INF] Removing 0 grants
+2019-03-18 21:57:27.099 -03:00 [INF] Removing 0 grants
+2019-03-18 21:57:57.115 -03:00 [INF] Removing 0 grants
+2019-03-18 21:58:27.135 -03:00 [INF] Removing 0 grants
+2019-03-18 21:58:57.148 -03:00 [INF] Removing 0 grants
+2019-03-18 21:59:27.168 -03:00 [INF] Removing 0 grants
+2019-03-18 21:59:57.178 -03:00 [INF] Removing 0 grants
+2019-03-18 22:00:27.191 -03:00 [INF] Removing 0 grants
+2019-03-18 22:00:57.219 -03:00 [INF] Removing 0 grants
+2019-03-18 22:01:27.236 -03:00 [INF] Removing 0 grants
+2019-03-18 22:01:57.256 -03:00 [INF] Removing 0 grants
+2019-03-18 22:02:27.279 -03:00 [INF] Removing 0 grants
+2019-03-18 22:02:57.304 -03:00 [INF] Removing 0 grants
+2019-03-18 22:03:27.325 -03:00 [INF] Removing 0 grants
+2019-03-18 22:03:57.334 -03:00 [INF] Removing 0 grants
+2019-03-18 22:04:27.353 -03:00 [INF] Removing 0 grants
+2019-03-18 22:04:57.362 -03:00 [INF] Removing 0 grants
+2019-03-18 22:05:27.380 -03:00 [INF] Removing 0 grants
+2019-03-18 22:05:57.395 -03:00 [INF] Removing 0 grants
+2019-03-18 22:06:27.414 -03:00 [INF] Removing 0 grants
+2019-03-18 22:06:57.435 -03:00 [INF] Removing 0 grants
+2019-03-18 22:07:27.458 -03:00 [INF] Removing 0 grants
+2019-03-18 22:07:57.473 -03:00 [INF] Removing 0 grants
+2019-03-18 22:08:27.492 -03:00 [INF] Removing 0 grants
+2019-03-18 22:08:57.510 -03:00 [INF] Removing 0 grants
+2019-03-18 22:09:27.521 -03:00 [INF] Removing 0 grants

@@ -1,4 +1,3 @@
-import { Observable } from 'rxjs';
 import { throwError } from 'rxjs';
 
 export abstract class BaseService {  
@@ -11,9 +10,9 @@ export abstract class BaseService {
 
     var applicationError = error.headers.get('Application-Error');
 
-    // either applicationError in header or model error in body
+    // either application-error in header or model error in body
     if (applicationError) {
-      return Observable.throw(applicationError);
+      return throwError(applicationError);
     }
     
     var modelStateErrors: string = '';

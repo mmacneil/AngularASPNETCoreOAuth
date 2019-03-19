@@ -21,6 +21,8 @@ namespace AuthServer.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Register([FromBody]RegisterRequestViewModel model)
         {
+            //var aVal = 0; var blowUp = 1 / aVal;
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
