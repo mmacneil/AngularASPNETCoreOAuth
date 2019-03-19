@@ -53,11 +53,10 @@ namespace AuthServer
                 .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetApiResources())
                 .AddInMemoryClients(Config.GetClients())
-                .AddAspNetIdentity<AppUser>();      
- 
+                .AddAspNetIdentity<AppUser>();
 
             services.AddTransient<IProfileService, IdentityClaimsProfileService>();
-            
+
             services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
                .AllowAnyMethod()
                .AllowAnyHeader()));
@@ -87,7 +86,7 @@ namespace AuthServer
                         await context.Response.WriteAsync(error.Error.Message).ConfigureAwait(false);
                     }
                 });
-             });      
+            });
 
             var serilog = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
