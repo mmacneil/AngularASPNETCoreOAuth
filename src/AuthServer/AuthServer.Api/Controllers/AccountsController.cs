@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 
 namespace AuthServer.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class AccountsController : ControllerBase
     {
         private readonly UserManager<AppUser> _userManager;
@@ -19,6 +17,7 @@ namespace AuthServer.Api.Controllers
         }
 
         [HttpPost]
+        [Route("api/[controller]")]
         public async Task<IActionResult> Register([FromBody]RegisterRequestViewModel model)
         {
             //var aVal = 0; var blowUp = 1 / aVal;
