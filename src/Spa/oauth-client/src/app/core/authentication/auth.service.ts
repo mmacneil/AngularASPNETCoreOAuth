@@ -12,16 +12,28 @@ import { ConfigService } from '../../shared/config.service';
 export class AuthService extends BaseService  {
 
   private manager = new UserManager(getClientSettings());
+  private user: User = null;
 
   constructor(private http: HttpClient, private configService: ConfigService) { 
     super();
-    this.baseUrl = this.configService.getApiURI();    
+    this.baseUrl = this.configService.getApiURI();  
+    
+    this.manager.getUser().then(user => {
+      this.user = user;
+    });
   }
 
   login() { 
-    return this.manager.signinPopup();   
+    return this.manager.signinRedirect();
     //return this.http.post('/users/authenticate',"");
   }
+
+  async completeAuthentication() {
+    const user = await this.manager.signinRedirectCallback('http://localhost:4200');
+    console.log(user);
+    this.user = user;
+  }
+
 
   register(userRegistration: any) {    
     return this.http.post(this.baseUrl + '/account', userRegistration).pipe(catchError(this.handleError));
