@@ -1,4 +1,3 @@
- 
 import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from '../../core/authentication/auth.service';
@@ -25,6 +24,7 @@ export class LoginComponent implements OnInit {
       
       this.spinner.show();
 
+      /*
       this.authService.login()
       .pipe(finalize(() => {
         this.spinner.hide();
@@ -37,7 +37,9 @@ export class LoginComponent implements OnInit {
       },
       error => {
         this.error = error.error.message;        
-      });
+      });*/
+
+      this.authService.login();
     }   
 
     ngOnInit() {

@@ -1,9 +1,7 @@
-﻿using AuthServer.Api;
-using AuthServer.Api.Extensions;
+﻿using AuthServer.Extensions;
 using AuthServer.Infrastructure.Data.Identity;
 using AuthServer.Infrastructure.Services;
 using IdentityServer4.Services;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
@@ -16,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System.Net;
-using System.Net.Http;
+
 
 namespace AuthServer
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace AuthServer.Api.Extensions
+namespace AuthServer.Extensions
 {
     public static class HttpResponseExtensions
     {

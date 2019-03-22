@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace AuthServer.Api.Models
+namespace AuthServer.Models
 {
     public class AccountOptions
     {

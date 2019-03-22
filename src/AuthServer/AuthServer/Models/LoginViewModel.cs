@@ -2,7 +2,7 @@
 using System.Linq;
 
 
-namespace AuthServer.Api.Models
+namespace AuthServer.Models
 {
     public class LoginViewModel : LoginInputModel
     {

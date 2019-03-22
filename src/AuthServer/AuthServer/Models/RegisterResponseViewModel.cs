@@ -1,6 +1,6 @@
 ﻿using AuthServer.Infrastructure.Data.Identity;
 
-namespace AuthServer.Api.Models
+namespace AuthServer.Models
 {
     public class RegisterResponseViewModel
     {

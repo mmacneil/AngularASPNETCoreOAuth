@@ -2,7 +2,7 @@
 using AuthServer.Infrastructure.Constants;
 using IdentityServer4.Models;
 
-namespace AuthServer.Api
+namespace AuthServer
 {
     public class Config
     {
@@ -21,8 +21,14 @@ namespace AuthServer.Api
             return new List<ApiResource>
             {
                 new ApiResource(Roles.Consumer, "Resource API")
+                {
+                    Scopes = {
+                        new Scope("api1.read"),
+                        new Scope("api1.write")
+                    }
+                }
             };
-        }
+        }        
 
         public static IEnumerable<Client> GetClients()
         {

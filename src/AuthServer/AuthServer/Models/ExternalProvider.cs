@@ -1,6 +1,6 @@
 ﻿
 
-namespace AuthServer.Api.Models
+namespace AuthServer.Models
 {
     public class ExternalProvider
     {
