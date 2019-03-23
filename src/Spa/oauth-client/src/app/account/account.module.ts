@@ -7,10 +7,9 @@ import { SharedModule }   from '../shared/shared.module';
 
 import { AccountRoutingModule } from './account.routing-module';
 import { AuthService }  from '../core/authentication/auth.service';
-import { AuthCallbackComponent } from './auth-callback/auth-callback.component';
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent, AuthCallbackComponent],
+  declarations: [LoginComponent, RegisterComponent],
   providers: [AuthService],
   imports: [
     CommonModule,

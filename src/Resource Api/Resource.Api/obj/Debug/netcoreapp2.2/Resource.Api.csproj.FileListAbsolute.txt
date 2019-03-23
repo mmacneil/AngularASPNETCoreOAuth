@@ -1,0 +1,14 @@
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\bin\Debug\netcoreapp2.2\Resource.Api.deps.json
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\bin\Debug\netcoreapp2.2\Resource.Api.runtimeconfig.json
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\bin\Debug\netcoreapp2.2\Resource.Api.runtimeconfig.dev.json
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\bin\Debug\netcoreapp2.2\Resource.Api.dll
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\bin\Debug\netcoreapp2.2\Resource.Api.pdb
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.csprojAssemblyReference.cache
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.csproj.CoreCompileInputs.cache
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.RazorAssemblyInfo.cache
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.RazorAssemblyInfo.cs
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.AssemblyInfoInputs.cache
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.AssemblyInfo.cs
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.RazorTargetAssemblyInfo.cache
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.dll
+C:\Code\AngularASPNETCoreOAuth\src\Resource Api\Resource.Api\obj\Debug\netcoreapp2.2\Resource.Api.pdb

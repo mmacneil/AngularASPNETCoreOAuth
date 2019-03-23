@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 
 import { ConfigService } from './shared/config.service';
 
+import { AuthCallbackComponent } from './auth-callback/auth-callback.component';
+
 
 /* Module Imports */
 import { CoreModule } from './core/core.module';
@@ -20,7 +22,8 @@ import { SharedModule }   from './shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent    
+    AppComponent,
+    AuthCallbackComponent
   ],
   imports: [
     BrowserModule,  
@@ -30,7 +33,7 @@ import { SharedModule }   from './shared/shared.module';
     AccountModule,   
     AppRoutingModule,
     ShellModule,
-    SharedModule   
+    SharedModule    
   ],
   providers: [
     ConfigService,
