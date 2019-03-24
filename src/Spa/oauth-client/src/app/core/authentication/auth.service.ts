@@ -21,8 +21,7 @@ export class AuthService extends BaseService  {
   private user: User | null;
 
   constructor(private http: HttpClient, private configService: ConfigService) { 
-    super();
-    this.baseUrl = this.configService.getApiURI();  
+    super();     
     
     this.manager.getUser().then(user => { 
       this.user = user;      
@@ -41,11 +40,15 @@ export class AuthService extends BaseService  {
   }  
 
   register(userRegistration: any) {    
-    return this.http.post(this.baseUrl + '/account', userRegistration).pipe(catchError(this.handleError));
+    return this.http.post(this.configService.authApiURI + '/account', userRegistration).pipe(catchError(this.handleError));
   }
 
   isAuthenticated(): boolean {
      return this.user != null && !this.user.expired;
+  }
+
+  get authorizationHeaderValue(): string {
+    return `${this.user.token_type} ${this.user.access_token}`;
   }
 }
 

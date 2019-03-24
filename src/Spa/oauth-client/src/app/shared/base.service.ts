@@ -2,8 +2,6 @@ import { throwError } from 'rxjs';
 
 export abstract class BaseService {  
     
-    baseUrl: string = '';
-
     constructor() { }
 
     protected handleError(error: any) {

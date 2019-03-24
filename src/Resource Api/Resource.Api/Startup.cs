@@ -23,12 +23,18 @@ namespace Resource.Api
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;                
             }).AddJwtBearer(o =>
             {
                 o.Authority = "http://localhost:5000";
-                o.Audience = "apiApp";
+                o.Audience = "resourceapi";
                 o.RequireHttpsMetadata = false;
+            });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("ApiReader", policy =>
+                         policy.RequireClaim("scope", "api2.read"));
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

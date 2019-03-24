@@ -20,7 +20,7 @@ namespace AuthServer
         {
             return new List<ApiResource>
             {
-                new ApiResource(Roles.Consumer, "Resource API")
+                new ApiResource("resourceapi", "Resource API")
                 {
                     Scopes = {
                         new Scope("api1.read"),

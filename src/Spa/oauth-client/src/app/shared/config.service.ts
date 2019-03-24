@@ -1,21 +1,15 @@
 import { Injectable } from '@angular/core';
  
 @Injectable()
-export class ConfigService {
+export class ConfigService {    
+
+    constructor() {}
+
+    get authApiURI() {
+        return 'http://localhost:5000/api';
+    }    
      
-    _apiURI : string;
-    _resourceApiURI: string;
- 
-    constructor() {
-        this._apiURI = 'http://localhost:5000/api';
-        this._resourceApiURI = 'http://localhost:5001/api';
-     }
- 
-     getApiURI() {
-         return this._apiURI;
-     } 
-     
-     getResourceApiURI() {
-        return this._resourceApiURI;
+    get resourceApiURI() {
+        return 'http://localhost:5050/api';
     }  
 }

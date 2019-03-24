@@ -18,6 +18,7 @@ import { CoreModule } from './core/core.module';
 import { HomeModule }  from './home/home.module';
 import { AccountModule }  from './account/account.module';
 import { ShellModule } from './shell/shell.module';
+import { TopSecretModule } from './top-secret/top-secret.module';
 import { SharedModule }   from './shared/shared.module';
 
 @NgModule({
@@ -30,9 +31,10 @@ import { SharedModule }   from './shared/shared.module';
     HttpClientModule, 
     CoreModule,
     HomeModule,
-    AccountModule,   
+    AccountModule,
+    TopSecretModule,   
     AppRoutingModule,
-    ShellModule,
+    ShellModule,   
     SharedModule    
   ],
   providers: [

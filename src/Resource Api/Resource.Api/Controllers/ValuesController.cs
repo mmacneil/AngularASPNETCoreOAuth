@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Resource.Api.Controllers
 {
-    [Authorize]
+    [Authorize(Policy = "ApiReader")]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
