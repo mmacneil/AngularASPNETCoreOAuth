@@ -1,3 +1,24 @@
 <div class="container">
- {{claims}}
+    <div class="row">
+        <div class="col-md-8">
+          <h3>Super-secret user claims sent from the server!</h3>
+            <table class="table small">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Value</th>                
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let claim of claims; let i = index" [attr.data-index]="i">
+                    <th scope="row">{{i}}</th>
+                    <td>{{claim.type}}</td>
+                    <td>{{claim.value}}</td>                   
+                  </tr>                 
+                </tbody>
+              </table>
+              <ngx-spinner></ngx-spinner>  
+        </div>
+    </div>
 </div>

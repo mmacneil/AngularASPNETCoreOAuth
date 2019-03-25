@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using System.Security.Claims;
 
 namespace Resource.Api
 {
@@ -33,8 +33,8 @@ namespace Resource.Api
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("ApiReader", policy =>
-                         policy.RequireClaim("scope", "api2.read"));
+                options.AddPolicy("ApiReader", policy => policy.RequireClaim("scope", "api.read"));
+                options.AddPolicy("Consumer", policy => policy.RequireClaim(ClaimTypes.Role, "consumer"));
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

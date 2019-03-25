@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NgxSpinnerService } from 'ngx-spinner';
+import { finalize } from 'rxjs/operators'
 import { AuthService } from '../../core/authentication/auth.service';
 import { TopSecretService } from '../top-secret.service';
 
@@ -10,14 +11,20 @@ import { TopSecretService } from '../top-secret.service';
 })
 export class IndexComponent implements OnInit {
 
-  claims='';
+  claims=null;
 
-  constructor(private authService: AuthService, private topSecretService: TopSecretService) { }
+  constructor(private authService: AuthService, private topSecretService: TopSecretService, private spinner: NgxSpinnerService) {
+     
+   }
 
-  ngOnInit() {
-   this.topSecretService.fetchTopSecretData(this.authService.authorizationHeaderValue).subscribe(
-   result => {         
-      console.log(result);
+  ngOnInit() {    
+    this.spinner.show();
+    this.topSecretService.fetchTopSecretData(this.authService.authorizationHeaderValue)
+    .pipe(finalize(() => {
+      this.spinner.hide();
+    })).subscribe(
+    result => {         
+      this.claims = result;
    });
   }
 }

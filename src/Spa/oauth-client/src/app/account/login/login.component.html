@@ -1,23 +1,10 @@
 <div class="row justify-content-center">
-  <div class="col-md-4 text-center">
-    <form #f="ngForm" (ngSubmit)="onSubmit()">
-      <img class="mb-4" src="assets/images/angular_solidBlack.svg" alt="" width="125" height="125">
-      <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>      
-      <div class="form-group">
-          <label for="email" class="sr-only">Email address</label>
-          <input type="email" id="email" name="email" [(ngModel)]="credentials.email" class="form-control" placeholder="Email address" required autoFocus>
-      </div>     
-      <div class="form-group">
-          <label for="password" class="sr-only">Password</label>
-          <input type="password" id="password" name="password" [(ngModel)]="credentials.password" class="form-control" placeholder="Password" required>     
-      </div>     
-      <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!f.form.valid">Go</button>
-      {{diagnostic}}   
-      <ngx-spinner></ngx-spinner>   
-      <div *ngIf="error" class="alert alert-danger mt-3" role="alert">
-          <strong>Oops!</strong> {{error}}
-      </div> 
-      <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
-    </form>      
-  </div>
+  <div class="col-md-8 text-center">
+      <h1 class="mt-5">Local Login</h1>
+      <p class="lead">This steps uses the <a href="http://docs.identityserver.io/en/latest/topics/grant_types.html#implicit" target="_blank">implicit flow type</a> and redirects to the IdentityServer instance to perform the authentication step.   Before you can login here, you must <a routerLink="/register">register a new account</a>.</p>
+      <img src="assets/images/open-identity.png" width="175" class="mb-4" />
+      <p>
+          <button class="btn btn-lg btn-primary" (click)="login()">Login with IdentityServer</button>
+      </p>     
+    </div>
 </div>
