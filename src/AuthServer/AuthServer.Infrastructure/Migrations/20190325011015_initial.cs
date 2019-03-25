@@ -157,12 +157,7 @@ namespace AuthServer.Infrastructure.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "dae53847-8e0c-4837-b6e9-67bb03042187", "7993d755-3025-4922-80ec-c43f4403d8b0", "admin", "ADMIN" });
-
-            migrationBuilder.InsertData(
-                table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "a5c37ca6-fb79-41b4-9e18-742b8165e516", "812aca70-845c-4961-8d59-7759662167fe", "consumer", "CONSUMER" });
+                values: new object[] { "fad5f5b2-0609-4d26-87a2-0a78d499feca", "b4e98f2c-4b00-46cd-91f6-b31f2fc5b759", "consumer", "CONSUMER" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
