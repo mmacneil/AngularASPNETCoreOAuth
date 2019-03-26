@@ -2,9 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;
-using System.Threading.Tasks;
-using AuthServer.Models;
-using IdentityServer4.Services;
+
 
 namespace AuthServer.Controllers
 {
@@ -12,15 +10,13 @@ namespace AuthServer.Controllers
     [AllowAnonymous]
     public class HomeController : Controller
     {
-        private readonly IIdentityServerInteractionService _interaction;
         private readonly IHostingEnvironment _environment;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IHostingEnvironment environment, ILogger<HomeController> logger, IIdentityServerInteractionService interaction)
+        public HomeController(IHostingEnvironment environment, ILogger<HomeController> logger)
         {
             _environment = environment;
             _logger = logger;
-            _interaction = interaction;
         }
 
         public IActionResult Index()
