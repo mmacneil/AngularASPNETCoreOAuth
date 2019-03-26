@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System.Net;
+ 
 
 
 namespace AuthServer
@@ -52,6 +53,16 @@ namespace AuthServer
                 .AddInMemoryApiResources(Config.GetApiResources())
                 .AddInMemoryClients(Config.GetClients())
                 .AddAspNetIdentity<AppUser>();
+
+                /* We'll play with this down the road... 
+                    services.AddAuthentication()
+                    .AddGoogle("Google", options =>
+                    {
+                        options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+
+                        options.ClientId = "<insert here>";
+                        options.ClientSecret = "<insert here>";
+                    });*/
 
             services.AddTransient<IProfileService, IdentityClaimsProfileService>();
 
@@ -101,7 +112,7 @@ namespace AuthServer
             app.UseStaticFiles();
             app.UseCors("AllowAll");
             app.UseHttpsRedirection();
-            app.UseIdentityServer();    
+            app.UseIdentityServer();
 
             app.UseMvc(routes =>
             {

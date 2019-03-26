@@ -6,7 +6,7 @@
     {
         <div class="col-md-4">
 
-            <h1 class="mt-5 mb-3">Login</h1>
+            <h1 class="mt-5 mb-3">Local Login</h1>
 
             <form asp-route="Login">
                 <input type="hidden" asp-for="ReturnUrl" />
@@ -24,13 +24,13 @@
                 {
                     <div class="form-check">
                         <input type="checkbox" asp-for="RememberLogin" class="form-check-input">
-                        <label asp-for="RememberLogin" class="form-check-label" for="exampleCheck1">Remember My Login</label>
+                        <label asp-for="RememberLogin" class="form-check-label">Remember My Login</label>
                     </div>
                 }
 
                 <div class="mt-4 mb-4">
-                    <button class="btn btn-primary" name="button" value="login">Login</button>
-                    <button class="btn btn-default" name="button" value="cancel">Cancel</button>
+                    <button class="btn btn-primary" value="login">Login</button>
+                    <button class="btn btn-light" value="cancel">Cancel</button>
                 </div>
 
                 <partial name="_ValidationSummary" />
@@ -40,27 +40,21 @@
 
     @if (Model.VisibleExternalProviders.Any())
     {
-        <div class="col-md-6 col-sm-6 external-providers">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">External Login</h3>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-inline">
-                        @foreach (var provider in Model.VisibleExternalProviders)
-                        {
-                            <li>
-                                <a class="btn btn-default"
-                                   asp-controller="External"
-                                   asp-action="Challenge"
-                                   asp-route-provider="@provider.AuthenticationScheme"
-                                   asp-route-returnUrl="@Model.ReturnUrl">
-                                    @provider.DisplayName
-                                </a>
-                            </li>
-                        }
-                    </ul>
-                </div>
+        <div class="col-md-4 ml-5">
+
+            <h1 class="mt-5 mb-3">External Login</h1>
+
+            <div class="list-group">
+                @foreach (var provider in Model.VisibleExternalProviders)
+                {
+                    <a class="list-group-item list-group-item-action"
+                       asp-controller="External"
+                       asp-action="Challenge"
+                       asp-route-provider="@provider.AuthenticationScheme"
+                       asp-route-returnUrl="@Model.ReturnUrl">
+                        @provider.DisplayName
+                    </a>
+                }
             </div>
         </div>
     }
