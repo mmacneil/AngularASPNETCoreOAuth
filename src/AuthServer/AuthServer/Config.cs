@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Security.Claims;
 using IdentityServer4.Models;
 
 namespace AuthServer
@@ -22,10 +21,10 @@ namespace AuthServer
             {
                 new ApiResource("resourceapi", "Resource API")
                 {
-                    Scopes = {new Scope("api.read")}                 
+                    Scopes = {new Scope("api.read")}
                 }
             };
-        }        
+        }
 
         public static IEnumerable<Client> GetClients()
         {

@@ -2,8 +2,7 @@
 
 <li class="list-group-item">
     <label>
-        <input class="consent-scopecheck"
-               type="checkbox"
+        <input type="checkbox"
                name="ScopesConsented"
                id="scopes_@Model.Name"
                value="@Model.Name"
@@ -16,10 +15,6 @@
                    value="@Model.Name" />
         }
         <strong>@Model.DisplayName</strong>
-        @if (Model.Emphasize)
-        {
-            <span class="glyphicon glyphicon-exclamation-sign"></span>
-        }
     </label>
     @if (Model.Required)
     {
@@ -27,8 +22,6 @@
     }
     @if (Model.Description != null)
     {
-        <div class="consent-description">
-            <label for="scopes_@Model.Name">@Model.Description</label>
-        </div>
+        <label for="scopes_@Model.Name">@Model.Description</label>
     }
 </li>
