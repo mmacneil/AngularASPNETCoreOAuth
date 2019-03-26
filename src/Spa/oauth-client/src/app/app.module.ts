@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 // used to create fake backend
-import { FakeBackendProvider } from './core/authentication/fake-backend-interceptor';
+import { FakeBackendProvider } from './shared/mocks/fake-backend-interceptor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

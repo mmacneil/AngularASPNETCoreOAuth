@@ -14,8 +14,7 @@ export class IndexComponent implements OnInit {
   claims=null;
 
   constructor(private authService: AuthService, private topSecretService: TopSecretService, private spinner: NgxSpinnerService) {
-     
-   }
+  }
 
   ngOnInit() {    
     this.spinner.show();

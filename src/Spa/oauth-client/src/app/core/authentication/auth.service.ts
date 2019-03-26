@@ -44,11 +44,19 @@ export class AuthService extends BaseService  {
   }
 
   isAuthenticated(): boolean {
-     return this.user != null && !this.user.expired;
+    return this.user != null && !this.user.expired;
   }
 
   get authorizationHeaderValue(): string {
     return `${this.user.token_type} ${this.user.access_token}`;
+  }
+
+  get name(): string {
+    return this.user != null ? this.user.profile.name : '';
+  }
+
+  signout() {
+    this.manager.signoutRedirect();
   }
 }
 

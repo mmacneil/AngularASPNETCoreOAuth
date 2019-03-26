@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { finalize } from 'rxjs/operators'
 import { AuthService } from '../../core/authentication/auth.service';
-
 import { UserRegistration }    from '../../shared/models/user.registration';
 
 @Component({
@@ -19,7 +18,6 @@ export class RegisterComponent implements OnInit {
 
   constructor(private authService: AuthService, private spinner: NgxSpinnerService) {
   }
-
     // TODO: Remove this when we're done
     // diagnostic property to return a JSON representation of the model.
     get diagnostic() { return JSON.stringify(this.userRegistration); }

@@ -4,9 +4,13 @@
       <a routerLink="/" class="navbar-brand d-flex align-items-center">
         <strong>OAuth Client</strong>
       </a>
-      <nav  class="my-2 my-md-0 mr-md-3">
-          <a *ngIf="isAuthenticated" class="p-2 text-light" href="#">Logout</a>  
-          <a *ngIf="!isAuthenticated" class="p-2 text-light" routerLink="/login">Login</a>     
+      <nav *ngIf="!isAuthenticated" class="my-2 my-md-0 mr-md-3">
+         <a class="p-2 text-light" routerLink="/register">Register</a> 
+         <a class="p-2 text-light" routerLink="/login">Login</a>     
+      </nav>
+      <nav *ngIf="isAuthenticated" class="my-2 my-md-0 mr-md-3">
+         <a class="p-2 text-light" routerLink="/topsecret">Top Secret Area</a>  
+         <a class="p-2 text-light" (click)="signout()" href="#">Signout {{name}}</a>             
       </nav>
     </div>    
   </div>
