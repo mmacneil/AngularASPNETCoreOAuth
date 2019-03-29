@@ -14,8 +14,9 @@
       </div>
       <div class="form-group">
           <label for="password" class="sr-only">Password</label>
-          <input type="password" id="password" name="password" [(ngModel)]="userRegistration.password" class="form-control" placeholder="Password" required>     
-      </div>   
+          <input type="password" id="password" name="password" [(ngModel)]="userRegistration.password" class="form-control" placeholder="Password" aria-describedby="passwordHelp" required>     
+          <small id="passwordHelp" class="form-text text-muted">Min. 6 characters with at least one non alphanumeric character</small>
+        </div>   
       <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!f.form.valid">Go</button>
       <ngx-spinner></ngx-spinner>   
       <div *ngIf="error" class="alert alert-danger mt-3" role="alert">
