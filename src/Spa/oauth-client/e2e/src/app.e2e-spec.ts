@@ -17,14 +17,14 @@ describe('workspace-project App', () => {
     page.navigateTo();
     page.clickButton('app-root > app-shell > main > div > app-index > div > div > a:nth-child(3)');
     browser.waitForAngular();
-    expect(page.getElementText('h1.font-weight-normal')).toEqual('Register');
+    expect(page.getElementText('h1')).toEqual('Register');
   });
 
   it('can navigate to login', () => {
     page.navigateTo();
-    page.clickButton('app-root > app-shell > main > div > app-index > div > div > a.btn.btn-lg.btn-primary.ml-4');
+    page.clickButton('app-root > app-shell > main > div > app-index > div > div > a:nth-child(4)');
     browser.waitForAngular();
-    expect(page.getElementText('h1.font-weight-normal')).toEqual('Please log in');
+    expect(page.getElementText('h1')).toEqual('Login');
   });
 
   afterEach(async () => {

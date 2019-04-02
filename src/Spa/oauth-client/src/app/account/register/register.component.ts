@@ -17,6 +17,7 @@ export class RegisterComponent implements OnInit {
   submitted: boolean = false;
 
   constructor(private authService: AuthService, private spinner: NgxSpinnerService) {
+   
   }
 
   ngOnInit() {
