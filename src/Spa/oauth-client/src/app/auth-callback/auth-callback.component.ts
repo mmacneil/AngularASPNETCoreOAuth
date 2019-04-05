@@ -17,7 +17,8 @@ export class AuthCallbackComponent implements OnInit {
  
     // check for error
     if (this.route.snapshot.fragment.indexOf('error') >= 0) {
-       this.error=true;     
+       this.error=true; 
+       return;    
      }
     
     await this.authService.completeAuthentication();      
