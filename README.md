@@ -9,4 +9,14 @@ Sample project based on <a href="https://fullstackmark.com/post/21/user-authenti
 - .NET Core SDK 2.2.104 
 - Angular 7.2.9
 - IdentityServer4 2.4.0 
-- SQL Server Express 2016 LocalDB 
+- SQL Server Express 2016 LocalDB
+
+## Setup
+To run the demo:
+
+1. Create the database: Use the dotnet cli to run the migrations in the AuthServer.Infrastrucuture project folder.
+`AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext`
+`AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext`
+
+
+
