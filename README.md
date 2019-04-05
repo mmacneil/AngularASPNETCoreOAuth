@@ -18,6 +18,6 @@ To run the demo:
 2. Create the database on your SQL Server Express LocalDB by using the dotnet cli to run the migrations from within the AuthServer.Infrastrucuture project folder.
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext</code></pre>
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext</code></pre>
-
+3. Install Angular CLI if necessary. `npm install -g @angular/cli`
 
 
