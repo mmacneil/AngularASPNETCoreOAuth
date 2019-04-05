@@ -12,7 +12,8 @@ Sample project based on <a href="https://fullstackmark.com/post/21/user-authenti
 - SQL Server Express 2016 LocalDB
 
 ## Setup
-To run the demo:
+
+#### To run the demo:
 
 **1.** Clone/Fork/Download this repository.
 
