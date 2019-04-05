@@ -15,20 +15,28 @@ Sample project based on <a href="https://fullstackmark.com/post/21/user-authenti
 To run the demo:
 
 1. Clone/Fork/Download this repository.
+
 2. Create the database on your SQL Server Express LocalDB by using the dotnet cli to run the migrations from within the AuthServer.Infrastrucuture project folder.
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext</code></pre>
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext</code></pre>
+
 3. Install Angular CLI if necessary. `npm install -g @angular/cli`
+
 4. Install Angular SPA dependencies.
 <pre><code>Spa\oauth-client> npm install</code></pre>
+
 5. Run the Angular CLI dev server to build and run the Angular app.
 <pre><code>Spa\oauth-client> ng serve</code></pre> 
 **Important: This must be running on the default http://localhost:4200**
+
 6. Build/Run the `AuthServer.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI.
 **Important: This must be running on http://localhost:5000**
+
 7. Build/Run the `Resource.Api.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI.
 **Important: This must be running on http://localhost:5050**
+
 8. Point a browser to `http://localhost:4200` to access the Angular client.
+
 9. Use the *Signup* and *Login* functions to perform the authentication flow, then try and access the *Top Secret Area* to hit the protected ASP.NET Core Web API.
 
 ## Contact
