@@ -14,7 +14,7 @@ Sample project based on <a href="https://fullstackmark.com/post/21/user-authenti
 ## Setup
 To run the demo:
 
-1. Create the database: Use the dotnet cli to run the migrations in the AuthServer.Infrastrucuture project folder.
+1. Create the database: Use the dotnet cli to run the migrations from within the AuthServer.Infrastrucuture project folder.
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context AppIdentityDbContext</code></pre>
 <pre><code>AuthServer.Infrastructure> dotnet ef database update --context PersistedGrantDbContext</code></pre>
 
