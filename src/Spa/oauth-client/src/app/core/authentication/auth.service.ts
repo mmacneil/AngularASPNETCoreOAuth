@@ -30,8 +30,7 @@ export class AuthService extends BaseService  {
   }
 
   login() { 
-    return this.manager.signinRedirect();
-    //return this.http.post('/users/authenticate',"");
+    return this.manager.signinRedirect();   
   }
 
   async completeAuthentication() {
