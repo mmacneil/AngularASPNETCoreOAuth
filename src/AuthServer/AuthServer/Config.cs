@@ -31,6 +31,7 @@ namespace AuthServer
             return new[]
             {
                 new Client {
+                    RequireConsent = false,
                     ClientId = "angular_spa",
                     ClientName = "Angular SPA",
                     AllowedGrantTypes = GrantTypes.Implicit,
