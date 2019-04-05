@@ -26,8 +26,8 @@ To run the demo:
 <pre><code>Spa\oauth-client> npm install</code></pre>
 
 5. Run the Angular CLI dev server to build and run the Angular app.
-<pre><code>Spa\oauth-client> ng serve</code></pre> 
-    -**Important: This must be running on the default http://localhost:4200**
+<pre><code>Spa\oauth-client  ng serve</code></pre> 
+    - **Important: This must be running on the default http://localhost:4200**
 
 6. Build/Run the `AuthServer.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI.
     - **Important: This must be running on http://localhost:5000**
