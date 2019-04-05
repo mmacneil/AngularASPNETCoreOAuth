@@ -30,10 +30,10 @@ To run the demo:
   - **Important: This must be running on the default http://localhost:4200**
 
 6. Build/Run the `AuthServer.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI.
-    - **Important: This must be running on http://localhost:5000**
+  - **Important: This must be running on http://localhost:5000**
 
 7. Build/Run the `Resource.Api.sln` solution using your preferred method: Visual Studio,  VSCode, dotnet CLI.
-    - **Important: This must be running on http://localhost:5050**
+  - **Important: This must be running on http://localhost:5050**
 
 8. Point a browser to `http://localhost:4200` to access the Angular client.
 
