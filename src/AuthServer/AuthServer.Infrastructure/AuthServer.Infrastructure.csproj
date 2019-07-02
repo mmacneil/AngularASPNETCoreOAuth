@@ -5,17 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="identityserver4.entityframework" Version="2.3.2" />
-    <PackageReference Include="microsoft.aspnetcore.identity.entityframeworkcore" Version="2.2.0" />
-    <PackageReference Include="microsoft.entityframeworkcore.design" Version="2.2.3" />
-    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="2.2.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />
+    <PackageReference Include="IdentityServer4.EntityFramework" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-  </ItemGroup>  
+  </ItemGroup>
 
 </Project>

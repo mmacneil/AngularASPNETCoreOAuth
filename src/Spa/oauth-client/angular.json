@@ -30,7 +30,8 @@
               "src/assets/styles.scss"
             ],
             "scripts": [],
-            "es5BrowserSupport": true
+            "es5BrowserSupport": true,
+            "aot": true
           },
           "configurations": {
             "production": {
