@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;
-
+using Microsoft.Extensions.Hosting;
 
 namespace AuthServer.Controllers
 {
@@ -10,10 +10,10 @@ namespace AuthServer.Controllers
     [AllowAnonymous]
     public class HomeController : Controller
     {
-        private readonly IHostingEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(IHostingEnvironment environment, ILogger<HomeController> logger)
+        public HomeController(IWebHostEnvironment environment, ILogger<HomeController> logger)
         {
             _environment = environment;
             _logger = logger;
