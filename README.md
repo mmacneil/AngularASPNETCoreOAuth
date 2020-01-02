@@ -6,7 +6,7 @@ Sample project based on <a href="https://fullstackmark.com/post/21/user-authenti
 ## Development Environment
 - Visual Studio 2019 Community
 - Visual Studio Code 1.32.3 
-- .NET Core SDK 2.2.104 
+- .NET Core SDK 3.1 
 - Angular 7.2.9
 - IdentityServer4 2.4.0 
 - SQL Server Express 2016 LocalDB
