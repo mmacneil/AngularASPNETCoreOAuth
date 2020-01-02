@@ -8,7 +8,7 @@ Sample project based on <a href="https://fullstackmark.com/post/21/user-authenti
 - Visual Studio Code 1.32.3 
 - .NET Core SDK 3.1 
 - Angular 8
-- IdentityServer4 2.4.0 
+- IdentityServer4 3.0.1
 - SQL Server Express 2016 LocalDB
 
 ## Setup
