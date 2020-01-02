@@ -18,19 +18,21 @@ namespace AuthServer.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly SignInManager<AppUser> _signInManager;
         private readonly UserManager<AppUser> _userManager;
         private readonly IIdentityServerInteractionService _interaction;
         private readonly IAuthenticationSchemeProvider _schemeProvider;
         private readonly IClientStore _clientStore;
         private readonly IEventService _events;
 
-        public AccountController(UserManager<AppUser> userManager, IIdentityServerInteractionService interaction, IAuthenticationSchemeProvider schemeProvider, IClientStore clientStore, IEventService events)
+        public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager, IIdentityServerInteractionService interaction, IAuthenticationSchemeProvider schemeProvider, IClientStore clientStore, IEventService events)
         {
             _userManager = userManager;
             _interaction = interaction;
             _schemeProvider = schemeProvider;
             _clientStore = clientStore;
             _events = events;
+            _signInManager = signInManager;
         }
 
         /// <summary>
@@ -173,6 +175,14 @@ namespace AuthServer.Controllers
             await _userManager.AddClaimAsync(user, new System.Security.Claims.Claim("role", Roles.Consumer));
 
             return Ok(new RegisterResponseViewModel(user));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Logout(string logoutId)
+        {
+            await _signInManager.SignOutAsync();
+            var context = await _interaction.GetLogoutContextAsync(logoutId);
+            return Redirect(context.PostLogoutRedirectUri);
         }
 
         /*****************************************/
