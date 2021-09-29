@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
+
+
 namespace AuthServer.Infrastructure.Migrations
 {
     public partial class initial : Migration
