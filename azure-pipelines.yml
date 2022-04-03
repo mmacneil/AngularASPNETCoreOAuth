@@ -16,6 +16,7 @@ pr:
     - README.md
     - azure-pipelines.yml
 
+
 pool:
   vmImage: 'windows-latest'
 
